@@ -128,7 +128,6 @@ def main():
             # Display an empty-looking JSON object as a placeholder
             st.json({})
 
-    st.divider()
    
 if __name__ == "__main__":
     main()
