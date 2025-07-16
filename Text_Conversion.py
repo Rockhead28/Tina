@@ -39,6 +39,7 @@ Required fields:
 }}
 
 Make sure work_experience is a list of entries, and fields like skills or job_description are lists, not strings.
+If a value for a field is not found, use null as the value."
 
 Resume text:
 \"\"\"
