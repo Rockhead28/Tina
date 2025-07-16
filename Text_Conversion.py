@@ -29,7 +29,7 @@ Required fields:
 - email
 - skills (as a list)
 - languages
-- education: list of {{education certificate}}
+- education: list of {{degree, institution, year, cgpa}}
 - work_experience: list of {{
     company_name (reformat font to only capitalize first letter as capital),
     duration,
