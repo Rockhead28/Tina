@@ -78,6 +78,10 @@ def replace_with_bullet_points(paragraph: Paragraph, key: str, bullet_points: li
         new_run = new_p.add_run("• " + point)
         copy_run_formatting(template_run, new_run)
 
+    #this is where add column after achievements
+    if key == "{ACHIEVEMENTS}" and bullet_points:
+        parent.add_paragraph("")
+
 # Your main function, adapted for Streamlit
 def generate_resume(data: dict, template_path: str) -> Optional[io.BytesIO]:
     """
