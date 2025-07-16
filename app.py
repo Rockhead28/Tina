@@ -107,7 +107,8 @@ def main():
 
     st.divider()
 
-
+"""
+Uncomment this to show text & JSON
     # --- Display Results Section (No changes needed here) ---
     st.header("Processing Results")
     if not uploaded_resume:
@@ -128,7 +129,7 @@ def main():
         else:
             # Display an empty-looking JSON object as a placeholder
             st.json({})
-
+"""
    
 if __name__ == "__main__":
     main()
