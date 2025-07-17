@@ -108,7 +108,7 @@ def main():
     st.divider()
 
 
-Uncomment this to show text & JSON
+#Uncomment this to show text & JSON
     # --- Display Results Section (No changes needed here) ---
     st.header("Processing Results")
     if not uploaded_resume:
