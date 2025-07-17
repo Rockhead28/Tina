@@ -35,6 +35,8 @@ You MUST follow these rules:
 - `email`: (string)
 - `skills`: (list of strings)
 - `languages`: (list of strings)
+- `nationality`: (strings)
+- `summary`: (strings)
 - `education`: (list of objects)
   - `degree`: (string)
   - `institution`: (string)
