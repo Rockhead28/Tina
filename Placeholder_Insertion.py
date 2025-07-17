@@ -99,6 +99,8 @@ def generate_resume(data: dict, template_path: str) -> Optional[io.BytesIO]:
         "{NAME}": data.get("name", ""),
         "{CONTACT}": data.get("contact_number", ""),
         "{EMAIL}": data.get("email", ""),
+        "{NATIONALITY}": data.get("nationality", ""),
+        "{SUMMARY}": data.get("summary", ""),
     }
 
     for table in doc.tables:
