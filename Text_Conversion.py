@@ -41,43 +41,11 @@ You MUST follow these rules:
   - `year`: (string) #<-- Explicitly a string
   - `cgpa`: (string) #<-- Explicitly a string
 - `work_experience`: (list of objects)
-  - `company_name`: (string, formatted in Title Case) #<-- Clarified instruction
+  - `company_name`: (string, formatted in Title Case)
   - `duration`: (string)
   - `job_title`: (string)
   - `job_description`: (list of strings)
   - `achievements`: (list of strings, use an empty list `[]` if none are found)
-
-### Example of Perfect Output:
-```json
-{
-  "name": "Jane Doe",
-  "contact_number": "+60 12-345 6789",
-  "email": "jane.doe@email.com",
-  "skills": ["Python", "Streamlit", "Prompt Engineering", "SQL"],
-  "languages": ["English", "Malay"],
-  "education": [
-    {
-      "degree": "Bachelor of Computer Science",
-      "institution": "University of Malaya",
-      "year": "2024",
-      "cgpa": "3.85"
-    }
-  ],
-  "work_experience": [
-    {
-      "company_name": "Tech Forward Inc.",
-      "duration": "June 2024 - Present",
-      "job_title": "AI Developer",
-      "job_description": [
-        "Developed and deployed machine learning models.",
-        "Created data processing pipelines for resume analysis."
-      ],
-      "achievements": [
-        "Reduced resume processing time by 40%."
-      ]
-    }
-  ]
-}
 
 
 
