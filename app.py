@@ -107,29 +107,29 @@ def main():
 
     st.divider()
 
-"""
-Uncomment this to show text & JSON
-    # --- Display Results Section (No changes needed here) ---
-    st.header("Processing Results")
-    if not uploaded_resume:
-        st.info("Upload a resume and click 'Convert' to see the results here.")
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.subheader("Raw Extracted Text")
-        if st.session_state.extracted_text:
-            st.text_area("Extracted Text", st.session_state.extracted_text, height=400, label_visibility="collapsed")
-        else:
-            st.text_area("Extracted Text", "Text from the uploaded resume will appear here.", height=400, label_visibility="collapsed", disabled=True)
+#Uncomment this to show text & JSON
+ #   # --- Display Results Section (No changes needed here) ---
+  #  st.header("Processing Results")
+   # if not uploaded_resume:
+    #    st.info("Upload a resume and click 'Convert' to see the results here.")
 
-    with col2:
-        st.subheader("AI-Parsed JSON Data")
-        if st.session_state.parsed_data:
-            st.json(st.session_state.parsed_data)
-        else:
+  #  col1, col2 = st.columns(2)
+   # with col1:
+    #    st.subheader("Raw Extracted Text")
+     #   if st.session_state.extracted_text:
+      #      st.text_area("Extracted Text", st.session_state.extracted_text, height=400, label_visibility="collapsed")
+       # else:
+        #    st.text_area("Extracted Text", "Text from the uploaded resume will appear here.", height=400, label_visibility="collapsed", disabled=True)
+
+  #  with col2:
+   #     st.subheader("AI-Parsed JSON Data")
+    #    if st.session_state.parsed_data:
+     #       st.json(st.session_state.parsed_data)
+      #  else:
             # Display an empty-looking JSON object as a placeholder
-            st.json({})
-"""
+       #     st.json({})
+
    
 if __name__ == "__main__":
     main()
