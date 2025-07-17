@@ -127,7 +127,7 @@ def main():
         if st.session_state.parsed_data:
             st.json(st.session_state.parsed_data)
         else:
-             Display an empty-looking JSON object as a placeholder
+             #Display an empty-looking JSON object as a placeholder
             st.json({})
 
    
