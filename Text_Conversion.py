@@ -40,8 +40,8 @@ You MUST follow these rules:
 - `education`: (list of objects)
   - `degree`: (string)
   - `institution`: (string)
-  - `year`: (string) #<-- Explicitly a string
-  - `cgpa`: (string) #<-- Explicitly a string
+  - `year`: (string) 
+  - `cgpa`: (string) 
 - `work_experience`: (list of objects)
   - `company_name`: (string, formatted in Title Case)
   - `duration`: (string)
