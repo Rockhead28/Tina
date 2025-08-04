@@ -6,6 +6,7 @@ import streamlit as st
 from docx import Document
 from docx.text.paragraph import Paragraph
 from docx.text.run import Run
+from docx.table import Row
 
 
 # Helper functions (unchanged)
@@ -155,7 +156,7 @@ def generate_resume(data: dict, template_path: str) -> Optional[io.BytesIO]:
             for template_row in template_rows:
                 new_row_elem = deepcopy(template_row._element)
                 table._tbl.append(new_row_elem) # Append duplicated row element
-                new_row = table.rows[-1] # Get the newly added row object
+                new_row = Row(new_row_elem, table) # Get the newly added row object
 
                 # Populate the new row's cells
                 for cell in new_row.cells:
@@ -209,7 +210,7 @@ def generate_resume(data: dict, template_path: str) -> Optional[io.BytesIO]:
             for template_row in template_rows:
                 new_row_elem = deepcopy(template_row._element)
                 table._tbl.append(new_row_elem)
-                new_row = table.rows[-1]
+                new_row = Row(new_row_elem, table)
 
                 for cell in new_row.cells:
                     for p in list(cell.paragraphs):
