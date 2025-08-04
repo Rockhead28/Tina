@@ -29,7 +29,7 @@ def main():
         st.stop()
 
     # --- DEFINE TEMPLATE PATH ---
-    template_path = "template_table.docx"
+    template_path = "template table.docx"
     if not os.path.exists(template_path):
         st.error(f"🛑 Template file not found at '{template_path}'.")
         st.info("Please make sure 'template table.docx' is in the same directory as this app.")
