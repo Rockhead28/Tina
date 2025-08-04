@@ -6,7 +6,6 @@ from Text_Extraction import ResumeParser
 from Text_Conversion import convert_to_json_with_gpt
 from Placeholder_Insertion import generate_resume
 
-
 def main():
     """
     Main function to run the Streamlit application.
