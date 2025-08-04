@@ -6,8 +6,6 @@ from Text_Extraction import ResumeParser
 from Text_Conversion import convert_to_json_with_gpt
 from Placeholder_Insertion import generate_resume
 
-
-
 def main():
     """
     Main function to run the Streamlit application.
@@ -31,7 +29,7 @@ def main():
         st.stop()
 
     # --- DEFINE TEMPLATE PATH ---
-    template_path = "template table.docx"
+    template_path = "Atomic_template.docx"
     if not os.path.exists(template_path):
         st.error(f"🛑 Template file not found at '{template_path}'.")
         st.info("Please make sure 'template table.docx' is in the same directory as this app.")
@@ -108,7 +106,7 @@ def main():
     st.divider()
 
 def uncomment():
-#Uncomment this to show text & JSON
+#Comment the above function to show text & JSON
     # --- Display Results Section (No changes needed here) ---
     st.header("Processing Results")
     if not uploaded_resume:
@@ -129,7 +127,6 @@ def uncomment():
         else:
              #Display an empty-looking JSON object as a placeholder
             st.json({})
-
    
 if __name__ == "__main__":
     main()
