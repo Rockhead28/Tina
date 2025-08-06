@@ -106,7 +106,7 @@ def main():
 
     st.divider()
 
-#def uncomment():
+def uncomment():
 #Comment the above function to show text & JSON
     # --- Display Results Section (No changes needed here) ---
     st.header("Processing Results")
